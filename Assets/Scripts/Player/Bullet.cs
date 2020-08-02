@@ -6,7 +6,7 @@ public class Bullet : MonoBehaviour
 {
     public float bulletSpeed;
     Rigidbody2D rb;
-
+    public float DestroyTime = 0.4f;
 
     void Start()
     {
@@ -14,6 +14,7 @@ public class Bullet : MonoBehaviour
         //rb.velocity = transform.right * bulletSpeed;
 
         rb.AddForce(transform.right * bulletSpeed, ForceMode2D.Impulse);
+        Destroy(gameObject, DestroyTime);
 
     }
     
