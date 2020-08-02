@@ -33,6 +33,9 @@ public class PlayerController : MonoBehaviour
 
         movingRight = true;
 
+        // temporary music location
+        FindObjectOfType<AudioManager>().Play("Music");
+
     }
 
     void Update()
