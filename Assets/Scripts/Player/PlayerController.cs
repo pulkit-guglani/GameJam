@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
     Vector3 theScale;
     public Transform firePoint;
 
-
+    [SerializeField] PlayerHealth playerHealth;
 
 
     void Start()
@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Jump") && grounded)
+        if (Input.GetButtonDown("Jump") && grounded && !playerHealth.isDead)
         {
             rb.AddForce(new Vector2(rb.velocity.x, jumpHeight));
             // rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
@@ -51,6 +51,8 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
+        if(playerHealth.isDead) { return; }
+
         // for checking is grounded
         grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, isGround);
         

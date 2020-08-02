@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -350,6 +350,7 @@ MonoBehaviour:
     m_Bits: 256
   jumpHeight: 570
   firePoint: {fileID: 2059776228}
+  playerHealth: {fileID: 279736463}
 --- !u!50 &279736461
 Rigidbody2D:
   serializedVersion: 4
@@ -386,6 +387,7 @@ MonoBehaviour:
   firePoint: {fileID: 2059776228}
   BulletPrefab: {fileID: 8045991083519518101, guid: 6f8548d9cda61834f83bb11aacef6735,
     type: 3}
+  playerHealth: {fileID: 279736463}
 --- !u!114 &279736463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -729,7 +731,7 @@ MonoBehaviour:
   priority: 0
   blendDistance: 0
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: 207bdc919533c054e92907bc651bb8cb, type: 2}
+  sharedProfile: {fileID: 0}
 --- !u!4 &762477635
 Transform:
   m_ObjectHideFlags: 0
