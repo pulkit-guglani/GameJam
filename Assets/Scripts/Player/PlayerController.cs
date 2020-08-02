@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     public LayerMask isGround;
     public float jumpHeight;
     bool grounded;
+    private bool isMoving = false;
 
     // for Flip
     bool movingRight;
@@ -24,6 +25,7 @@ public class PlayerController : MonoBehaviour
     public Transform firePoint;
 
     [SerializeField] PlayerHealth playerHealth;
+    private Animator _animator;
 
 
     void Start()
@@ -32,7 +34,8 @@ public class PlayerController : MonoBehaviour
         //anim = GetComponent<Animator>();
 
         movingRight = true;
-
+        _animator = GetComponent<Animator>();
+        
         // temporary music location
         FindObjectOfType<AudioManager>().Play("Music");
 
@@ -61,6 +64,17 @@ public class PlayerController : MonoBehaviour
         
         // for moving Left and Right
         float move = Input.GetAxis("Horizontal");
+        if (move != 0 && !isMoving)  // for animation
+        {
+            isMoving = true;
+            _animator.SetTrigger("walk");
+        }
+
+        if (move == 0 && isMoving)
+        {
+            isMoving = false;
+            _animator.SetTrigger("idle");
+        }
         rb.velocity = new Vector2(movSpeed * move , rb.velocity.y);
 
         if(movingRight && move < 0)

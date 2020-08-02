@@ -13,7 +13,7 @@ public class Bullet : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         //rb.velocity = transform.right * bulletSpeed;
 
-        rb.AddForce(transform.right * bulletSpeed, ForceMode2D.Impulse);
+        rb.velocity = transform.right * bulletSpeed;
         Destroy(gameObject, DestroyTime);
 
     }
