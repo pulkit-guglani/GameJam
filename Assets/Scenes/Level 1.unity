@@ -164,6 +164,7 @@ GameObject:
   - component: {fileID: 279736457}
   - component: {fileID: 279736461}
   - component: {fileID: 279736460}
+  - component: {fileID: 279736462}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -272,6 +273,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   jumpHeight: 500
+  firePoint: {fileID: 2059776228}
 --- !u!50 &279736461
 Rigidbody2D:
   serializedVersion: 4
@@ -293,6 +295,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &279736462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279736456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ff8110dd0fce044da87fdec0bdb8f22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 2059776228}
+  BulletPrefab: {fileID: 8045991083519518101, guid: 6f8548d9cda61834f83bb11aacef6735,
+    type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,7 +406,7 @@ GameObject:
   - component: {fileID: 1057847117}
   m_Layer: 8
   m_Name: New Sprite (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -497,7 +514,7 @@ GameObject:
   - component: {fileID: 1069801529}
   m_Layer: 8
   m_Name: New Sprite (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -604,7 +621,7 @@ GameObject:
   - component: {fileID: 1442003405}
   - component: {fileID: 1442003404}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -620,7 +637,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.082, y: 0.061, z: 0}
   m_LocalScale: {x: 0.1, y: 0.02, z: 0}
-  m_Children: []
+  m_Children:
+  - {fileID: 2059776228}
   m_Father: {fileID: 279736459}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -779,6 +797,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2059776227
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2059776228}
+  m_Layer: 0
+  m_Name: FirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2059776228
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2059776227}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.52, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1442003402}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &4122545080401454700
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -849,7 +897,7 @@ PrefabInstance:
     - target: {fileID: 4122545082171974303, guid: c7cce5b4dcefe0349ad5564210e6afaa,
         type: 3}
       propertyPath: sounds.Array.data[0].loop
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7cce5b4dcefe0349ad5564210e6afaa, type: 3}

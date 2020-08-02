@@ -18,8 +18,10 @@ public class PlayerController : MonoBehaviour
     public float jumpHeight;
     bool grounded;
 
+    // for Flip
     bool movingRight;
     Vector3 theScale;
+    public Transform firePoint;
 
 
 
@@ -38,9 +40,10 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonDown("Jump") && grounded)
         {
             rb.AddForce(new Vector2(rb.velocity.x, jumpHeight));
+            // rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
 
             FindObjectOfType<AudioManager>().Play("Jump");
-           // rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
+          
         }
 
         
@@ -74,6 +77,7 @@ public class PlayerController : MonoBehaviour
         theScale.x *= -1;
         transform.localScale = theScale;
 
+        firePoint.Rotate(0, 180, 0);
     }
 
 }
