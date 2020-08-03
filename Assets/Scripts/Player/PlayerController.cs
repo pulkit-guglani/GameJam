@@ -64,6 +64,7 @@ public class PlayerController : MonoBehaviour
         
         // for moving Left and Right
         float move = Input.GetAxis("Horizontal");
+
         if (move != 0 && !isMoving)  // for animation
         {
             isMoving = true;
