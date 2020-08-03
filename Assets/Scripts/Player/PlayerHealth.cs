@@ -34,13 +34,13 @@ public class PlayerHealth : MonoBehaviour
     }
 
     //call this to initialize shield
-    void InitiateShieldPowerUp()
+    public void InitiateShieldPowerUp()
     {
         shieldPowerIsOn = true;
         Debug.Log("Shield is now ON!");
     }
 
-    void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         if(currentHealth <= 0)
         {

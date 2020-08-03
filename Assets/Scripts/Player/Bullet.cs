@@ -8,6 +8,8 @@ public class Bullet : MonoBehaviour
     Rigidbody2D rb;
     public float DestroyTime = 0.4f;
 
+    public GameObject hitEffect;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -21,10 +23,14 @@ public class Bullet : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
+
+        Instantiate(hitEffect, transform.position, Quaternion.identity);
+        Destroy(gameObject);
         // checking tag for Ground
-        if (col.collider.CompareTag("Ground"))
-        {
-            Destroy(gameObject);
-        }
+        //if (col.collider.CompareTag("Ground"))
+        //{
+        //    Instantiate(hitEffect, transform.position, Quaternion.identity);
+        //    Destroy(gameObject);
+        //}
     }
 }
