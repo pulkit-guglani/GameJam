@@ -9,6 +9,9 @@ public class PlayerAbilities : MonoBehaviour
     private bool isDissolving;
     float fade = 1f;
 
+    [HideInInspector]
+    public bool invisibilityEnabled;
+
     void Start()
     {
         material = GetComponent<SpriteRenderer>().material;
@@ -40,11 +43,13 @@ public class PlayerAbilities : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             isDissolving = true;
+            invisibilityEnabled = true;
         }
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
             isDissolving = false;
+            invisibilityEnabled = false;
         }
 
     }
