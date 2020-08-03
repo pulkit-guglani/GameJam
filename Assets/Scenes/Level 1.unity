@@ -227,9 +227,21 @@ PrefabInstance:
         type: 3}
       propertyPath: healthBar
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 399351431}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2be9a209b4f84e54fbc4b1871fadc9a1, type: 3}
+--- !u!114 &399351431 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 187771919276907774, guid: 6ded94bf5834c714b86fe182203a79a7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1348909382}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54a00aae1170b5045a67673a9a7f5fb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &497095477
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1113,6 +1125,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 91355616095826261, guid: 6ded94bf5834c714b86fe182203a79a7,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 432
+      objectReference: {fileID: 0}
     - target: {fileID: 187771918877421063, guid: 6ded94bf5834c714b86fe182203a79a7,
         type: 3}
       propertyPath: m_Name
@@ -1946,6 +1963,31 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.4991062, y: 4.7234097}
   m_EdgeRadius: 0
+--- !u!1 &1909055394 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8232954555043710155, guid: 6ded94bf5834c714b86fe182203a79a7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1348909382}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1909055398
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909055394}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d818d587f2633d545b55afc695fb264a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 2
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1958239840
 GameObject:
   m_ObjectHideFlags: 0

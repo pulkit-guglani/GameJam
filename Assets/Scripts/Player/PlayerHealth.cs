@@ -33,7 +33,6 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    //call this to initialize shield
     public void InitiateShieldPowerUp()
     {
         shieldPowerIsOn = true;
@@ -59,6 +58,14 @@ public class PlayerHealth : MonoBehaviour
         {
             currentHealth -= damage;
             healthBar.SetHealth(currentHealth);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.transform.tag == "Bullet")
+        {
+            TakeDamage(10);
         }
     }
 }

@@ -17,7 +17,6 @@ public class MenuHandler : MonoBehaviour
 
     void Start()
     {
-        pausePanel.SetActive(false);
         currentSceneBuildIndex = SceneManager.GetActiveScene().buildIndex;
         nextSceneBuildIndex = currentSceneBuildIndex + 1;
     }
@@ -38,14 +37,14 @@ public class MenuHandler : MonoBehaviour
 
     public void ResumeGame()
     {
-        pausePanel.SetActive(false);
+        pausePanel.GetComponent<Animator>().SetBool("IsPaused", false);
         isPaused = false;
         Time.timeScale = 1f;
     }
 
     private void PauseGame()
     {
-        pausePanel.SetActive(true);
+        pausePanel.GetComponent<Animator>().SetBool("IsPaused", true);
         isPaused = true;
         Time.timeScale = 0f;
     }
