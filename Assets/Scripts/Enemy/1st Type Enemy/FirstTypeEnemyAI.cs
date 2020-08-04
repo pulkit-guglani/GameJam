@@ -31,7 +31,6 @@ public class FirstTypeEnemyAI : MonoBehaviour
     // for Attack Rate
     public float attackRate;
     float attackTime;
-    public Transform weapon;
 
     bool invisiblePlayer;
 
@@ -68,10 +67,6 @@ public class FirstTypeEnemyAI : MonoBehaviour
     void Attack()
     {
         Vector3 playerDir = player.position - transform.position;
-
-        float angle = Mathf.Atan2(playerDir.y, playerDir.x) * Mathf.Rad2Deg;
-
-        weapon.rotation = Quaternion.Euler(0, 0, angle); 
 
         RaycastHit2D hit = Physics2D.Raycast(shootPoint.position, playerDir, attackRange);
         
