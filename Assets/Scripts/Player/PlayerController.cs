@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     private bool isMoving = false;
 
     // for Flip
-    bool movingRight;
+    public bool movingRight;
     Vector3 theScale;
     public Transform firePoint;
 

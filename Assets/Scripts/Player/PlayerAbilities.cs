@@ -42,15 +42,24 @@ public class PlayerAbilities : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            isDissolving = true;
-            invisibilityEnabled = true;
+           MakeInvisible();
         }
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            isDissolving = false;
-            invisibilityEnabled = false;
+           MakeVisible();
         }
 
+    }
+
+    public void MakeInvisible()
+    {
+        isDissolving = true;
+        invisibilityEnabled = true;
+    }
+    public void MakeVisible()
+    {
+        isDissolving = false;
+        invisibilityEnabled = false;
     }
 }

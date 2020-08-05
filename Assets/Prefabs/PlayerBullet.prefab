@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -1994986909396441963}
   - component: {fileID: 1502614341617231672}
   m_Layer: 11
-  m_Name: Bullet
+  m_Name: PlayerBullet
   m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -70,11 +70,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingLayerID: 634019441
+  m_SortingLayer: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 2466880d79f43a245865117e54b99389, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.01845169, a: 1}
+  m_Color: {r: 0.754717, g: 0.024919916, b: 0.53910667, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -115,7 +115,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0023377242, y: -0.0035065573}
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0349f3ab201bf7640bdae0ff944cfd09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletSpeed: 50
-  DestroyTime: 0.4
+  DestroyTime: 2
+  damage: 50
   hitEffect: {fileID: 4977934523964528436, guid: e6bc5ae4153b3cb49b3f7f1d81b2d47b,
     type: 3}

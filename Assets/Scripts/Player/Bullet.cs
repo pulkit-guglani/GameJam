@@ -1,13 +1,14 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public float bulletSpeed;
     Rigidbody2D rb;
-    public float DestroyTime = 0.4f;
+    public float DestroyTime = 2;
 
+    public int damage = 20;
     public GameObject hitEffect;
 
     void Start()
@@ -15,22 +16,30 @@ public class Bullet : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         //rb.velocity = transform.right * bulletSpeed;
 
-        rb.velocity = transform.right * bulletSpeed;
+      //  rb.velocity = transform.right * bulletSpeed;
         Destroy(gameObject, DestroyTime);
 
     }
-    
 
-    void OnCollisionEnter2D(Collision2D col)
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        GameObject effect =  Instantiate(hitEffect, transform.position, Quaternion.identity);
+        Destroy(effect,2);
+        Destroy(gameObject);
+    }
+
+    /*void OnCollisionEnter2D(Collision2D col)
     {
 
-        Instantiate(hitEffect, transform.position, Quaternion.identity);
-        Destroy(gameObject);
+       GameObject effect =  Instantiate(hitEffect, transform.position, Quaternion.identity);
+       Destroy(effect,2);
+       Destroy(gameObject);
         // checking tag for Ground
         //if (col.collider.CompareTag("Ground"))
         //{
         //    Instantiate(hitEffect, transform.position, Quaternion.identity);
         //    Destroy(gameObject);
         //}
-    }
+    }*/
 }

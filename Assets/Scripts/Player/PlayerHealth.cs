@@ -56,16 +56,25 @@ public class PlayerHealth : MonoBehaviour
         }
         else
         {
+            Debug.Log("current health of player is :" + currentHealth);
             currentHealth -= damage;
             healthBar.SetHealth(currentHealth);
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    /*private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.transform.tag == "Bullet")
         {
-            TakeDamage(10);
+            TakeDamage(collision.gameObject.GetComponent<Bullet>().damage);
+        }
+    }*/
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.transform.tag == "Bullet")
+        {
+            TakeDamage(collision.gameObject.GetComponent<Bullet>().damage);
         }
     }
 }
