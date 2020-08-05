@@ -25,6 +25,8 @@ public class PlayerAttack : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             GameObject bullet = Instantiate(BulletPrefab, firePoint.position, firePoint.rotation);
+            FindObjectOfType<AudioManager>().Play("Shoot");
+
             bullet.GetComponent<Rigidbody2D>().velocity =  transform.right * (bulletSpeed * (_controller.movingRight? 1 : -1));
         }
 
