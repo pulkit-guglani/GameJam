@@ -1,0 +1,386 @@
+fileFormatVersion: 2
+guid: 2c209788de9336b42ae198eda53b94e1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8062318987265777584
+    second: liftAnimation_0
+  - first:
+      213: 7914628412170630359
+    second: liftAnimation_1
+  - first:
+      213: -1607913250443416866
+    second: liftAnimation_2
+  - first:
+      213: 6827369382786863593
+    second: liftAnimation_3
+  - first:
+      213: 3820981215416320676
+    second: liftAnimation_4
+  - first:
+      213: -8533233462079615716
+    second: liftAnimation_5
+  - first:
+      213: -2797965427231516963
+    second: liftAnimation_6
+  - first:
+      213: -1250397274990169834
+    second: liftAnimation_7
+  - first:
+      213: 4625123275104070687
+    second: liftAnimation_8
+  - first:
+      213: -4340613120657230251
+    second: liftAnimation_9
+  - first:
+      213: -4484371085300863637
+    second: liftAnimation_0
+  - first:
+      213: 8744934492637122140
+    second: liftAnimation_1
+  - first:
+      213: -746609679605248483
+    second: liftAnimation_2
+  - first:
+      213: 5960412662883736780
+    second: liftAnimation_3
+  - first:
+      213: 5894931971165830316
+    second: liftAnimation_4
+  - first:
+      213: 7206583201609140462
+    second: liftAnimation_5
+  - first:
+      213: -1339209336743566087
+    second: liftAnimation_6
+  - first:
+      213: -6174810921441007635
+    second: liftAnimation_7
+  - first:
+      213: 2269969941529436991
+    second: liftAnimation_8
+  - first:
+      213: -5408414629825479116
+    second: liftAnimation_9
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: liftAnimation_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 23
+        width: 136
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6deb93d14054c1c0800000000000000
+      internalID: -4484371085300863637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liftAnimation_1
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 23
+        width: 138
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5e42b1a69f3c5970800000000000000
+      internalID: 8744934492637122140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liftAnimation_2
+      rect:
+        serializedVersion: 2
+        x: 1937
+        y: 23
+        width: 136
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1ec24db37283a5f0800000000000000
+      internalID: -746609679605248483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liftAnimation_3
+      rect:
+        serializedVersion: 2
+        x: 2898
+        y: 23
+        width: 136
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cccdcedbcb3a7b250800000000000000
+      internalID: 5960412662883736780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liftAnimation_4
+      rect:
+        serializedVersion: 2
+        x: 3857
+        y: 23
+        width: 138
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cacbe6425610fc150800000000000000
+      internalID: 5894931971165830316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liftAnimation_5
+      rect:
+        serializedVersion: 2
+        x: 4818
+        y: 23
+        width: 136
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee8c5306d3de20460800000000000000
+      internalID: 7206583201609140462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liftAnimation_6
+      rect:
+        serializedVersion: 2
+        x: 5776
+        y: 23
+        width: 138
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f46383243c2a6de0800000000000000
+      internalID: -1339209336743566087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liftAnimation_7
+      rect:
+        serializedVersion: 2
+        x: 6737
+        y: 23
+        width: 136
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de76e48be2aae4aa0800000000000000
+      internalID: -6174810921441007635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liftAnimation_8
+      rect:
+        serializedVersion: 2
+        x: 7698
+        y: 23
+        width: 136
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f332daf82ad808f10800000000000000
+      internalID: 2269969941529436991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liftAnimation_9
+      rect:
+        serializedVersion: 2
+        x: 8657
+        y: 23
+        width: 138
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43ef9379c8371f4b0800000000000000
+      internalID: -5408414629825479116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

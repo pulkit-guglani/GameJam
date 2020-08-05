@@ -50,6 +50,15 @@ public class EGA_Laser : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.forward, MaxLength);       
            if (hit.collider != null)
             {
+                if (hit.collider.gameObject.CompareTag("Player"))
+                {
+                    hit.collider.gameObject.GetComponent<PlayerHealth>().TakeDamage(10);    
+                }
+                if (hit.collider.gameObject.CompareTag("enemy"))
+                {
+                    Destroy(hit.collider.gameObject);
+                }
+                
                 //End laser position if collides with object
                 Laser.SetPosition(1, hit.point);
                 HitEffect.transform.position = hit.point + hit.normal * HitOffset;

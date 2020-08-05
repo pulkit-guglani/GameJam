@@ -44,7 +44,10 @@ public class PlayerHealth : MonoBehaviour
         if(currentHealth <= 0)
         {
             print("Player Dead!");
+            
             isDead = true;
+            GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+            GetComponent<Animator>().SetTrigger("idle");
             return; 
         }
 
