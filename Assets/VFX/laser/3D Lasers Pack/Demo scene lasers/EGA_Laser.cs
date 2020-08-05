@@ -107,4 +107,14 @@ public class EGA_Laser : MonoBehaviour
             }
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        print("!");
+        if(other.tag == "Bullet")
+        {
+            print("Dissabled Lasers");
+            this.gameObject.SetActive(false);
+        }
+    }
 }

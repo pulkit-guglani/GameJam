@@ -274,11 +274,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6245728468420459237, guid: 048cc62742eeb25468c296082cba7f25,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6269271874921031945, guid: 048cc62742eeb25468c296082cba7f25,
         type: 3}
       propertyPath: m_Name
@@ -339,7 +334,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7311946701122902101, guid: 048cc62742eeb25468c296082cba7f25, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 048cc62742eeb25468c296082cba7f25, type: 3}
 --- !u!1001 &339615193
 PrefabInstance:
@@ -427,6 +423,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54a00aae1170b5045a67673a9a7f5fb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &448073328 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6269271874921031945, guid: 048cc62742eeb25468c296082cba7f25,
+    type: 3}
+  m_PrefabInstance: {fileID: 286299550}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &448073332
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448073328}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -5.63, y: 0.49999923}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 36.19, y: 46.45}
+  m_EdgeRadius: 0
 --- !u!1001 &497095477
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -935,11 +963,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6245728468420459237, guid: 048cc62742eeb25468c296082cba7f25,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6269271874921031945, guid: 048cc62742eeb25468c296082cba7f25,
         type: 3}
       propertyPath: m_Name
@@ -1199,7 +1222,7 @@ PrefabInstance:
     - target: {fileID: 8232954555043710155, guid: 6ded94bf5834c714b86fe182203a79a7,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ded94bf5834c714b86fe182203a79a7, type: 3}
