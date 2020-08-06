@@ -48,6 +48,7 @@ public class PlayerHealth : MonoBehaviour
             isDead = true;
             GetComponent<Rigidbody2D>().velocity = Vector2.zero;
             GetComponent<Animator>().SetTrigger("idle");
+            GameOver.Instance.ShowGameOverScreen();
             return; 
         }
 

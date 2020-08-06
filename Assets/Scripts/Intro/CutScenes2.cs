@@ -7,33 +7,84 @@ public class CutScenes2 : MonoBehaviour
 {
 
     [SerializeField] Image[] image;
-    int currentImage;
-    int nextImage;
     [SerializeField] Animator animator;
     [SerializeField]
     private float timeBetweenImageChange;
 
+    private int currentImage;
+    [SerializeField] private Image dark;
+    [SerializeField] private SpriteRenderer bg;
+    [SerializeField] private SpriteRenderer player;
+    [SerializeField] public GameObject MainMenu;
+
     void Start()
     {
         currentImage = 0;
-        nextImage = currentImage + 1;
         StartCoroutine(StartTransition());
     }
 
     IEnumerator StartTransition()
     {
-        while (nextImage < image.Length)
+        while (currentImage < image.Length-1)
         {
             yield return new WaitForSeconds(timeBetweenImageChange);
             ChangeImage();
         }
+        yield return new WaitForSeconds(3f);
+        
+        image[currentImage].gameObject.SetActive(false);
+        bg.gameObject.SetActive(true);
+        StartCoroutine(DarkImageFadeInAndOut());
+        player.gameObject.SetActive(true);
+        
+        yield return new WaitForSeconds(4f);
+        
+        MainMenu.SetActive(true);
+        
+        
     }
 
     public void ChangeImage()
     {
+        StartCoroutine(DarkImageFadeInAndOut());
         image[currentImage].gameObject.SetActive(false);
-        image[nextImage].gameObject.SetActive(true);
+        image[currentImage+1].gameObject.SetActive(true);
         currentImage++;
-        nextImage++;
+        
+    }
+
+    IEnumerator DarkImageFadeInAndOut()
+    {
+        Color color = dark.color;
+        color = new Color(color.r,color.g,color.b,1);
+        dark.color = color;
+        while (true)
+        {
+            dark.color =new Color(color.r,color.g,color.b,dark.color.a - Time.deltaTime);
+            if (dark.color.a < 0.1f)
+            {
+                break;
+            }
+
+            yield return null;
+        }
+      //  dark.CrossFadeAlpha(0.9f,0.5f,true);
+        //yield return new WaitForSeconds(0.5f);
+       // dark.CrossFadeAlpha(0.1f,0.5f,true);
+        yield return null;
+    }
+
+    IEnumerator CameraZoom()
+    {
+        while (  Camera.main.orthographicSize > 4)
+        {
+            Camera.main.orthographicSize -= Time.deltaTime;
+            yield return null;
+        }
+
+        yield return null;
+        
+        
+
     }
 }
