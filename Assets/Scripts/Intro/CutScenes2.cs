@@ -33,15 +33,33 @@ public class CutScenes2 : MonoBehaviour
         yield return new WaitForSeconds(3f);
         
         image[currentImage].gameObject.SetActive(false);
+        image[currentImage].transform.parent.gameObject.SetActive(false);
         bg.gameObject.SetActive(true);
         StartCoroutine(DarkImageFadeInAndOut());
         player.gameObject.SetActive(true);
+        yield return new WaitForSeconds(2);
+        StartCoroutine(CameraZoom());
+        yield return new WaitForSeconds(6);
+
+            StartCoroutine(ShowMainMenu());
+      
+       
         
-        yield return new WaitForSeconds(4f);
         
+    }
+
+    private IEnumerator ShowMainMenu()
+    { 
         MainMenu.SetActive(true);
-        
-        
+        var localScale = MainMenu.transform.localScale;
+        while (localScale.x > 0.5f)
+        {
+            localScale -=  localScale*Time.deltaTime*0.2f;
+            MainMenu.transform.localScale = localScale;
+            yield return null;
+        }
+       
+        yield return null;
     }
 
     public void ChangeImage()
@@ -78,12 +96,11 @@ public class CutScenes2 : MonoBehaviour
     {
         while (  Camera.main.orthographicSize > 4)
         {
-            Camera.main.orthographicSize -= Time.deltaTime;
+            Camera.main.orthographicSize -= Time.deltaTime*0.2f;
             yield return null;
         }
 
         yield return null;
-        
         
 
     }
