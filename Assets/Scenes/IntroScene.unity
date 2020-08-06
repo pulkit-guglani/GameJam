@@ -302,7 +302,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &106330805
 Animator:
   serializedVersion: 3
@@ -1146,7 +1146,7 @@ GameObject:
   - component: {fileID: 1334000994}
   - component: {fileID: 1334000993}
   m_Layer: 0
-  m_Name: Intro
+  m_Name: IntroSound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1380,7 +1380,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1836796726
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1524,6 +1524,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CutSceneHandler
       objectReference: {fileID: 0}
+    - target: {fileID: 1969251021312249207, guid: 25853b11feb53d3428e6d87001565862,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2889192667029501958, guid: 25853b11feb53d3428e6d87001565862,
         type: 3}
       propertyPath: image.Array.size
@@ -1578,7 +1583,7 @@ PrefabInstance:
         type: 3}
       propertyPath: MainMenu
       value: 
-      objectReference: {fileID: 4739161854587139611}
+      objectReference: {fileID: 4739161853049512877}
     - target: {fileID: 2889192667029501958, guid: 25853b11feb53d3428e6d87001565862,
         type: 3}
       propertyPath: timeBetweenImageChange
@@ -1689,7 +1694,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4739161853049512878
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1699,7 +1704,7 @@ RectTransform:
   m_GameObject: {fileID: 4739161853049512877}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4739161853872937398}
   - {fileID: 4739161853802173399}
@@ -1938,7 +1943,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.78039217}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.8666667}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -2384,7 +2389,7 @@ PrefabInstance:
     - target: {fileID: 4971973119774350170, guid: f2c13ba3eb322a1428c9edca54d09bfb,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4971973119774350174, guid: f2c13ba3eb322a1428c9edca54d09bfb,
         type: 3}
