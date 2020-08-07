@@ -18,6 +18,8 @@ public class PlayerAttack : MonoBehaviour
     public bool bullet = false;
     public GameObject MagneticGunEffect;
     public GameObject explodableBullet;
+    public GameObject dart;
+    private int selectedWeapon = 1;
 
     private void Start()
     {
@@ -27,39 +29,70 @@ public class PlayerAttack : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            selectedWeapon = 1;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            selectedWeapon = 2;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            selectedWeapon = 3;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            selectedWeapon = 4;
+        }
+        
+        
         if(playerHealth.isDead) { return; }
         // for Tranquilizers
         if (Input.GetButtonDown("Fire1"))
         {
-            if (this.bullet)
+            if (tranquilizer && selectedWeapon == 1)
+            {
+                GameObject bullet = Instantiate(dart, firePoint.position, firePoint.rotation);
+                FindObjectOfType<AudioManager>().Play("Shoot");
+              
+                bullet.GetComponent<Rigidbody2D>().velocity = transform.right *
+                                                              (bulletSpeed * (_controller.movingRight ? 1 : -1));
+                bullet.GetComponent<SpriteRenderer>().flipX = true;
+            }
+
+            if (this.bullet && selectedWeapon == 2)
             {
                 GameObject bullet = Instantiate(BulletPrefab, firePoint.position, firePoint.rotation);
                 FindObjectOfType<AudioManager>().Play("Shoot");
 
-                bullet.GetComponent<Rigidbody2D>().velocity =  transform.right * (bulletSpeed * (_controller.movingRight? 1 : -1)); 
+                bullet.GetComponent<Rigidbody2D>().velocity = transform.right *
+                                                              (bulletSpeed * (_controller.movingRight ? 1 : -1));
             }
 
-            if (magneticGun)
+            if (magneticGun && selectedWeapon == 3)
             {
                 magneticGun = false;
-                GameObject magnet = Instantiate(MagneticGunEffect,firePoint.position+firePoint.right,Quaternion.identity,firePoint);
+                GameObject magnet = Instantiate(MagneticGunEffect, firePoint.position + firePoint.right,
+                    Quaternion.identity, firePoint);
                 magnet.GetComponent<Rigidbody2D>().velocity = firePoint.right * 2;
                 EGA_Laser[] lasers = FindObjectsOfType<EGA_Laser>();
-                Destroy(lasers[0].gameObject,1);
-                Destroy(lasers[1].gameObject,1);
-                Destroy(magnet,4);
-                
+                Destroy(lasers[0].gameObject, 1);
+                Destroy(lasers[1].gameObject, 1);
+                Destroy(magnet, 4);
+
             }
 
-            if (blastGun)
+            if (blastGun && selectedWeapon == 4)
             {
                 GameObject bullet = Instantiate(explodableBullet, firePoint.position, firePoint.rotation);
                 FindObjectOfType<AudioManager>().Play("Shoot");
 
-                bullet.GetComponent<Rigidbody2D>().velocity =  transform.right * (bulletSpeed * (_controller.movingRight? 1 : -1));
+                bullet.GetComponent<Rigidbody2D>().velocity =
+                    transform.right * (bulletSpeed * (_controller.movingRight ? 1 : -1));
             }
-          
         }
-
     }
+
 }
+

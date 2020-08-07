@@ -27,6 +27,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] PlayerHealth playerHealth;
     private Animator _animator;
 
+ 
+
+    
 
     void Start()
     {
@@ -52,7 +55,7 @@ public class PlayerController : MonoBehaviour
           
         }
 
-        
+
     }
 
     void FixedUpdate()
@@ -61,11 +64,10 @@ public class PlayerController : MonoBehaviour
 
         // for checking is grounded
         grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, isGround);
-        
         // for moving Left and Right
         float move = Input.GetAxis("Horizontal");
 
-        if (move != 0 && !isMoving)  // for animation
+        if (move != 0 && !isMoving && grounded)  // for animation
         {
             isMoving = true;
             _animator.SetTrigger("walk");
