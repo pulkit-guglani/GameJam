@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -200,11 +200,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1155838111683540438, guid: 2b6ecd1f30d4d324dbe0ac72266b3b12,
-        type: 3}
-      propertyPath: m_Text
-      value: try again
-      objectReference: {fileID: 0}
     - target: {fileID: 3918396384674364201, guid: 2b6ecd1f30d4d324dbe0ac72266b3b12,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -264,16 +259,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Game Over
-      objectReference: {fileID: 0}
-    - target: {fileID: 3918396385269400484, guid: 2b6ecd1f30d4d324dbe0ac72266b3b12,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3918396385269400485, guid: 2b6ecd1f30d4d324dbe0ac72266b3b12,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b6ecd1f30d4d324dbe0ac72266b3b12, type: 3}
