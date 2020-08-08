@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2329,6 +2329,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 237766207, guid: ca22dd1afb163ac4c94a357763a3e29d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 680804394, guid: ca22dd1afb163ac4c94a357763a3e29d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1256691600, guid: ca22dd1afb163ac4c94a357763a3e29d, type: 3}
       propertyPath: m_Text
       value: 'You helped him change his past.
@@ -2342,6 +2350,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1937705910, guid: ca22dd1afb163ac4c94a357763a3e29d, type: 3}
       propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6995957618068626342, guid: ca22dd1afb163ac4c94a357763a3e29d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6995957618068626362, guid: ca22dd1afb163ac4c94a357763a3e29d,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6995957618588755795, guid: ca22dd1afb163ac4c94a357763a3e29d,
