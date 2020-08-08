@@ -76,6 +76,7 @@ public class PlayerAttack : MonoBehaviour
                 magneticGun = false;
                 GameObject magnet = Instantiate(MagneticGunEffect, firePoint.position + firePoint.right,
                     Quaternion.identity, firePoint);
+                AudioManager.Instance.Play("magnet");
                 magnet.GetComponent<Rigidbody2D>().velocity = firePoint.right * 2;
                 EGA_Laser[] lasers = FindObjectsOfType<EGA_Laser>();
                 Destroy(lasers[0].gameObject, 1);

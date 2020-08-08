@@ -17,6 +17,7 @@ public class mine : MonoBehaviour
     {
         yield return new WaitForSeconds(15);
         transform.GetChild(0).gameObject.SetActive(true);
+        AudioManager.Instance.Play("mine");
         transform.GetChild(0).GetComponent<ParticleSystem>().Play(true);
         yield return new WaitForSeconds(1f);
         Destroy(gameObject);

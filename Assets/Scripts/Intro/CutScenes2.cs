@@ -30,7 +30,7 @@ public class CutScenes2 : MonoBehaviour
             yield return new WaitForSeconds(timeBetweenImageChange);
             ChangeImage();
         }
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
         
         image[currentImage].gameObject.SetActive(false);
         image[currentImage].transform.parent.gameObject.SetActive(false);
@@ -39,7 +39,7 @@ public class CutScenes2 : MonoBehaviour
         player.gameObject.SetActive(true);
         yield return new WaitForSeconds(2);
         StartCoroutine(CameraZoom());
-        yield return new WaitForSeconds(6);
+        yield return new WaitForSeconds(4);
 
             StartCoroutine(ShowMainMenu());
       

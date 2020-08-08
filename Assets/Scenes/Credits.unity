@@ -386,8 +386,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.89
-  m_Text: "Game Designer : \nPulkit \n\nProgrammer :\n Ashutosh , Amandeep , Pulkit\n\nArtwork
-    :\n RAI\n\nSound Engineer and Composser :\n Rose , Moodies"
+  m_Text: "Game Designer : \nPulkit \n\nProgrammer :\n Ashutosh , Aman , Pulkit\n\nArtwork
+    :\n RAI\n\nSound Engineer and Composser :\n Rose , Spooky"
 --- !u!222 &1789378087
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -846,7 +846,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 8062318987265777584, guid: 2c209788de9336b42ae198eda53b94e1,
     type: 3}
   m_Color: {r: 0.3018868, g: 0.3018868, b: 0.3018868, a: 1}
