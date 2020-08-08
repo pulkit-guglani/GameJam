@@ -20,7 +20,7 @@ public class PlayerAttack : MonoBehaviour
     public GameObject ExplodableGunEffect;
     public GameObject explodableBullet;
     public GameObject dart;
-    private int selectedWeapon = 1;
+    public int selectedWeapon = 1;
 
     private void Start()
     {

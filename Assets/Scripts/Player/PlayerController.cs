@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] PlayerHealth playerHealth;
     private Animator _animator;
+    private PlayerAttack _playerAttack;
 
  
 
@@ -33,6 +34,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        _playerAttack = GetComponent<PlayerAttack>();
         rb = GetComponent<Rigidbody2D>();
         //anim = GetComponent<Animator>();
 
@@ -70,9 +72,13 @@ public class PlayerController : MonoBehaviour
 
         if (move != 0 && !isMoving && grounded)  // for animation
         {
-            isMoving = true;
-            _animator.SetTrigger("walk");
             FindObjectOfType<AudioManager>().Play("Walk");
+            isMoving = true;
+            
+            _animator.SetTrigger("walk");
+            
+           
+            
 
         }
 
