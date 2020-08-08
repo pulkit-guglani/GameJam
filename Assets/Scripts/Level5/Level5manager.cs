@@ -9,19 +9,21 @@ public class Level5manager : MonoBehaviour
     private Rigidbody2D rb;
     public GameObject enemy;
     public Transform targetPosition;
+    private Animator _animator;
+    public Animator childAnimator;
 
     private void Start()
     {
         rb = enemy.GetComponent<Rigidbody2D>();
+        _animator = enemy.GetComponent<Animator>();
         StartCoroutine(startMovement());
     }
 
     IEnumerator startMovement()
     {
       
-        yield return new WaitForSeconds(0);
+        
         rb.velocity = new Vector2(2,0);
-        // play walk animation ( right )
         while (enemy.transform.position.x < targetPosition.position.x )
         {
             yield return null;
@@ -29,11 +31,14 @@ public class Level5manager : MonoBehaviour
         }
         rb.velocity = Vector2.zero;
         // play snatch animation
-        
+        _animator.SetTrigger("snatch");
         yield return new WaitForSeconds(1);
         
         rb.velocity = new Vector2(-2,0);
-        
+        enemy.GetComponent<SpriteRenderer>().flipX = true;
+        _animator.SetTrigger("run");
+        childAnimator.SetTrigger("jump");
+        childAnimator.GetComponent<SpriteRenderer>().flipX = true;
         // play walk animation ( left )
         
         yield return null;

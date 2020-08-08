@@ -8,6 +8,7 @@ TagManager:
   - Bullet
   - enemy
   - blastGun
+  - ExplosionFX
   layers:
   - Default
   - TransparentFX
@@ -23,10 +24,10 @@ TagManager:
   - PlayerBullet
   - EnemyBullet
   - Laser
-  - 
-  - 
-  - 
-  - 
+  - Enemy
+  - Enemy2
+  - Player2
+  - blaster
   - 
   - 
   - 
@@ -50,4 +51,7 @@ TagManager:
     locked: 0
   - name: Bullet
     uniqueID: 634019441
+    locked: 0
+  - name: blaster
+    uniqueID: 3657310681
     locked: 0

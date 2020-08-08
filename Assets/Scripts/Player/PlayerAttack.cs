@@ -17,6 +17,7 @@ public class PlayerAttack : MonoBehaviour
     public bool tranquilizer = true;
     public bool bullet = false;
     public GameObject MagneticGunEffect;
+    public GameObject ExplodableGunEffect;
     public GameObject explodableBullet;
     public GameObject dart;
     private int selectedWeapon = 1;
@@ -61,7 +62,7 @@ public class PlayerAttack : MonoBehaviour
                 bullet.GetComponent<SpriteRenderer>().flipX = true;
             }
 
-            if (this.bullet && selectedWeapon == 2)
+            if (this.bullet && selectedWeapon == 5)
             {
                 GameObject bullet = Instantiate(BulletPrefab, firePoint.position, firePoint.rotation);
                 FindObjectOfType<AudioManager>().Play("Shoot");
@@ -70,7 +71,7 @@ public class PlayerAttack : MonoBehaviour
                                                               (bulletSpeed * (_controller.movingRight ? 1 : -1));
             }
 
-            if (magneticGun && selectedWeapon == 3)
+            if (magneticGun && selectedWeapon == 2)
             {
                 magneticGun = false;
                 GameObject magnet = Instantiate(MagneticGunEffect, firePoint.position + firePoint.right,
@@ -79,11 +80,12 @@ public class PlayerAttack : MonoBehaviour
                 EGA_Laser[] lasers = FindObjectsOfType<EGA_Laser>();
                 Destroy(lasers[0].gameObject, 1);
                 Destroy(lasers[1].gameObject, 1);
+                
                 Destroy(magnet, 4);
 
             }
 
-            if (blastGun && selectedWeapon == 4)
+            if (blastGun && selectedWeapon == 3)
             {
                 GameObject bullet = Instantiate(explodableBullet, firePoint.position, firePoint.rotation);
                 FindObjectOfType<AudioManager>().Play("Shoot");

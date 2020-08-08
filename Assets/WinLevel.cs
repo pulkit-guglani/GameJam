@@ -7,6 +7,7 @@ public class WinLevel : MonoBehaviour
 {
     public static WinLevel Instance;
     public GameObject winCanvas;
+    public GameObject GameWinCanvas;
     
     void Start()
     {
@@ -18,6 +19,13 @@ public class WinLevel : MonoBehaviour
     {
         Time.timeScale = 0;
         winCanvas.SetActive(true);
+    }
+
+    public void GameWon()
+    {
+        GameWinCanvas.SetActive(true);
+        Time.timeScale = 0;
+        Debug.Log("You Won");
     }
     
     public void LoadNextScene()

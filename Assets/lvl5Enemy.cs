@@ -10,7 +10,7 @@ public class lvl5Enemy : MonoBehaviour
         Debug.Log("trigger hua");
         if (other.gameObject.name.Contains("dart")) 
         {
-            WinLevel.Instance.ShowWinLevelCanvas();
+            WinLevel.Instance.GameWon();
         }
     }
 }

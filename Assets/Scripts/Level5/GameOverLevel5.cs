@@ -13,7 +13,7 @@ public class GameOverLevel5 : MonoBehaviour
         if (other.gameObject.name == "enemy")
         {
             Debug.Log("collide hua ");
-            GameOver.Instance.ShowGameOverScreen();
+            GameOver.Instance.ShowGameOverScreen("thief ran away");
         }
     }
 
@@ -22,7 +22,7 @@ public class GameOverLevel5 : MonoBehaviour
         if (other.gameObject.name == "lvl5enemy")
         {
             Debug.Log("trigger hua ");
-            GameOver.Instance.ShowGameOverScreen();
+            GameOver.Instance.ShowGameOverScreen("thief ran away");
         }
     }
 }

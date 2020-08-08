@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameOver : MonoBehaviour
 {
     public GameObject canvas;
+    public Text message;
 
     public static GameOver Instance;
     // Start is called before the first frame update
@@ -15,10 +17,11 @@ public class GameOver : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void ShowGameOverScreen()
+    public void ShowGameOverScreen(string msg)
     {
         Time.timeScale = 0;
         canvas.SetActive(true);
+        message.text = msg;
     }
 
     public void RestartLevel()

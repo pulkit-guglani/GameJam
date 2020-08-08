@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,17 +9,20 @@ public class EnemyOnlyShootPlayer : MonoBehaviour
    // Rigidbody2D rb;
    // Animator anim;
     public Transform player;
+    public int health = 20;
 
     public bool toShootPlayer = false;
     // for Attacking
     public float awarenessRange;
     float disToPlayer;
-   // public Transform shootPoint;
+    public Transform shootPoint;
    // public float attackRange;
     public GameObject bulletPrefab;
 
     public int BulletSpeed = 15;
     public float attackRate = 1;
+
+    public PlayerAbilities playerAbilities;
   //  float attackTime;
 
     //public float bulletSpeed;
@@ -52,12 +56,13 @@ public class EnemyOnlyShootPlayer : MonoBehaviour
 
         if (toShootPlayer)
         {
-            if (disToPlayer <= awarenessRange && !FindObjectOfType<PlayerAbilities>().invisibilityEnabled)
+            if (disToPlayer <= awarenessRange && !playerAbilities.invisibilityEnabled)
             {
 
 
                 if (!isShooting)
                 {
+                    Debug.Log("Shoot kr rha h " + playerAbilities.invisibilityEnabled);
                     isShooting = true;
                     AttackSimple();
                 }
@@ -89,20 +94,20 @@ public class EnemyOnlyShootPlayer : MonoBehaviour
 
     void AttackSimple()
     {
-       
-        sprite.flipX = Gun.transform.rotation.eulerAngles.z > 90;
+        
         StartCoroutine(ShootBullet());
         
     }
 
     IEnumerator ShootBullet()
     {
-        while (true)
+        Gun.transform.right = player.position - Gun.transform.position;
+        while (isShooting)
         {
            
           //  Gun.transform.LookAt(pos);
             disToPlayer = Vector3.Distance(transform.position, player.position);
-            if (disToPlayer > awarenessRange || FindObjectOfType<PlayerAbilities>().invisibilityEnabled)
+            if (disToPlayer > awarenessRange || playerAbilities.invisibilityEnabled)
             {
                 if (toShootPlayer)
                 {
@@ -116,7 +121,7 @@ public class EnemyOnlyShootPlayer : MonoBehaviour
                 }
                
             }
-            GameObject bullet = Instantiate(bulletPrefab, Gun.transform.position,Gun.transform.rotation,Gun.transform);
+            GameObject bullet = Instantiate(bulletPrefab, shootPoint.position,Gun.transform.rotation,Gun.transform);
             bullet.GetComponent<Rigidbody2D>().velocity = bullet.transform.right * BulletSpeed;
             // (bullet.transform.rotation.eulerAngles.normalized)
             bullet.transform.localScale *= 5;
@@ -124,6 +129,22 @@ public class EnemyOnlyShootPlayer : MonoBehaviour
         }
         yield return null;
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        string name = other.gameObject.name;
+        Debug.Log("Goli lagi enemy ko "+name);
+        if ((name.Contains("dart") || name.Contains("Bullet")) )
+        {
+            health -= 10;
+            if (health <= 0)
+            {
+                GameOver.Instance.ShowGameOverScreen("One enemy got killed");
+            }
+            
+        }
+    }
+
     /*void Attack()
     {
         Vector2 playerDir = player.position - transform.position;

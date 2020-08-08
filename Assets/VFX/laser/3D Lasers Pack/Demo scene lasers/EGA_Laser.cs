@@ -57,7 +57,13 @@ public class EGA_Laser : MonoBehaviour
                 if (hit.collider.gameObject.CompareTag("enemy"))
                 {
                     Destroy(hit.collider.gameObject);
+                    GameOver.Instance.ShowGameOverScreen("Laser killed the enemy");
                 }
+                if (hit.collider.gameObject.name.Contains("dart"))
+                {
+                   hit.collider.GetComponent<Bullet>().DestroyIt();
+                }
+                
                 
                 //End laser position if collides with object
                 Laser.SetPosition(1, hit.point);

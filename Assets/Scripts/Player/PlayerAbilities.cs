@@ -6,11 +6,13 @@ public class PlayerAbilities : MonoBehaviour
 {
     // for Invisiblity
     Material material;
-    private bool isDissolving;
+    public bool isDissolving;
     float fade = 1f;
 
     [HideInInspector]
     public bool invisibilityEnabled;
+
+    public bool canInvisible = false;
 
     public Rigidbody2D rb;
     public bool canThrust = true;
@@ -29,7 +31,11 @@ public class PlayerAbilities : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Invisible();
+        if (canInvisible)
+        {
+            Invisible(); 
+        }
+      
         if (canThrust)
         {
             ThrustCheck();
@@ -138,15 +144,15 @@ public class PlayerAbilities : MonoBehaviour
             material.SetFloat("_Fade", fade);
         }
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && !invisibilityEnabled)
         {
            MakeInvisible();
         }
 
-        if (Input.GetKeyDown(KeyCode.Q))
+        /*if (Input.GetKeyDown(KeyCode.Q) && invisibilityEnabled)
         {
            MakeVisible();
-        }
+        }*/
 
     }
 
@@ -154,10 +160,12 @@ public class PlayerAbilities : MonoBehaviour
     {
         isDissolving = true;
         invisibilityEnabled = true;
+        Invoke("MakeVisible",3);
     }
     public void MakeVisible()
     {
         isDissolving = false;
         invisibilityEnabled = false;
     }
+    
 }
