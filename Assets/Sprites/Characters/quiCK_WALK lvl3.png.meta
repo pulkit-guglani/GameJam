@@ -1,0 +1,575 @@
+fileFormatVersion: 2
+guid: 7d56023147adefa4e88bcb84ae81da75
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6127327549908110040
+    second: quiCK_WALK lvl3_0
+  - first:
+      213: 6859844106802862755
+    second: quiCK_WALK lvl3_1
+  - first:
+      213: -8907083165135306739
+    second: quiCK_WALK lvl3_2
+  - first:
+      213: 501439438218608544
+    second: quiCK_WALK lvl3_3
+  - first:
+      213: 8209027045330496403
+    second: quiCK_WALK lvl3_4
+  - first:
+      213: -6556501803087090375
+    second: quiCK_WALK lvl3_5
+  - first:
+      213: -8722841226749972153
+    second: quiCK_WALK lvl3_6
+  - first:
+      213: 6019886309182398226
+    second: quiCK_WALK lvl3_7
+  - first:
+      213: 8539183428890374972
+    second: quiCK_WALK lvl3_8
+  - first:
+      213: 3310883175254066100
+    second: quiCK_WALK lvl3_9
+  - first:
+      213: -6599941641479538517
+    second: quiCK_WALK lvl3_10
+  - first:
+      213: 1221763047318977308
+    second: quiCK_WALK lvl3_11
+  - first:
+      213: -5281703492218481304
+    second: quiCK_WALK lvl3_12
+  - first:
+      213: 1851093682561957588
+    second: quiCK_WALK lvl3_13
+  - first:
+      213: -5816045480803503354
+    second: quiCK_WALK lvl3_14
+  - first:
+      213: -2138297350254752432
+    second: quiCK_WALK lvl3_15
+  - first:
+      213: -5838887318803644356
+    second: quiCK_WALK lvl3_16
+  - first:
+      213: -3866259894936806765
+    second: quiCK_WALK lvl3_17
+  - first:
+      213: 3502297977206735177
+    second: quiCK_WALK lvl3_18
+  - first:
+      213: -3626773345787916001
+    second: quiCK_WALK lvl3_19
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: quiCK_WALK lvl3_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 67
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 825334dae0c57faa0800000000000000
+      internalID: -6127327549908110040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quiCK_WALK lvl3_1
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 2
+        width: 62
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aa9a80cedf033f50800000000000000
+      internalID: 6859844106802862755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quiCK_WALK lvl3_2
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 2
+        width: 60
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d008f359d0fa36480800000000000000
+      internalID: -8907083165135306739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quiCK_WALK lvl3_3
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 2
+        width: 62
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0af3467238875f600800000000000000
+      internalID: 501439438218608544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quiCK_WALK lvl3_4
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 2
+        width: 67
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39baf7cba925ce170800000000000000
+      internalID: 8209027045330496403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quiCK_WALK lvl3_5
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 2
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93d29c11950a205a0800000000000000
+      internalID: -6556501803087090375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quiCK_WALK lvl3_6
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 2
+        width: 61
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7417f6fae1e32f680800000000000000
+      internalID: -8722841226749972153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quiCK_WALK lvl3_7
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 2
+        width: 60
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21fdd0714beea8350800000000000000
+      internalID: 6019886309182398226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quiCK_WALK lvl3_8
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 2
+        width: 63
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c33b9e60616418670800000000000000
+      internalID: 8539183428890374972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quiCK_WALK lvl3_9
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 2
+        width: 67
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b306d1c4be92fd20800000000000000
+      internalID: 3310883175254066100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quiCK_WALK lvl3_10
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 2
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba8bd498b0c4864a0800000000000000
+      internalID: -6599941641479538517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quiCK_WALK lvl3_11
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 2
+        width: 60
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1b7523b40394f010800000000000000
+      internalID: 1221763047318977308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quiCK_WALK lvl3_12
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 2
+        width: 60
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 865906158ae93b6b0800000000000000
+      internalID: -5281703492218481304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quiCK_WALK lvl3_13
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 2
+        width: 63
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4de331395e760b910800000000000000
+      internalID: 1851093682561957588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quiCK_WALK lvl3_14
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 2
+        width: 67
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 603f03f2371494fa0800000000000000
+      internalID: -5816045480803503354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quiCK_WALK lvl3_15
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 2
+        width: 62
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05d08ed93ed3352e0800000000000000
+      internalID: -2138297350254752432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quiCK_WALK lvl3_16
+      rect:
+        serializedVersion: 2
+        x: 1225
+        y: 2
+        width: 60
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c300d275bea18fea0800000000000000
+      internalID: -5838887318803644356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quiCK_WALK lvl3_17
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 2
+        width: 62
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39ad3f02c19485ac0800000000000000
+      internalID: -3866259894936806765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quiCK_WALK lvl3_18
+      rect:
+        serializedVersion: 2
+        x: 1370
+        y: 2
+        width: 67
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9410afc4479aa9030800000000000000
+      internalID: 3502297977206735177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
