@@ -7,7 +7,8 @@ public class mine : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        transform.GetChild(0).GetComponent<ParticleSystem>().Stop(true);
+       
+       // transform.GetChild(0).GetComponent<ParticleSystem>().Stop(true);
         StartCoroutine(BlastMine());
 
     }
@@ -15,6 +16,7 @@ public class mine : MonoBehaviour
     private IEnumerator BlastMine()
     {
         yield return new WaitForSeconds(15);
+        transform.GetChild(0).gameObject.SetActive(true);
         transform.GetChild(0).GetComponent<ParticleSystem>().Play(true);
         yield return new WaitForSeconds(1f);
         Destroy(gameObject);
