@@ -21435,6 +21435,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Over
       objectReference: {fileID: 0}
+    - target: {fileID: 3918396385269400484, guid: 2b6ecd1f30d4d324dbe0ac72266b3b12,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3918396385269400485, guid: 2b6ecd1f30d4d324dbe0ac72266b3b12,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b6ecd1f30d4d324dbe0ac72266b3b12, type: 3}
 --- !u!1 &1066480078
@@ -23232,6 +23242,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6995957618068626342, guid: ca22dd1afb163ac4c94a357763a3e29d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6995957618068626362, guid: ca22dd1afb163ac4c94a357763a3e29d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6995957618588755795, guid: ca22dd1afb163ac4c94a357763a3e29d,
         type: 3}
       propertyPath: m_Name
@@ -26587,6 +26607,16 @@ PrefabInstance:
       propertyPath: invisible
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7337584602477246828, guid: 7843cddb280b5c04b875ad6afe32ceef,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337584602477246828, guid: 7843cddb280b5c04b875ad6afe32ceef,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
     - target: {fileID: 8323979413629642444, guid: 7843cddb280b5c04b875ad6afe32ceef,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -28438,6 +28468,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 187771918877421115, guid: 6ded94bf5834c714b86fe182203a79a7,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
       objectReference: {fileID: 0}
     - target: {fileID: 187771918877421117, guid: 6ded94bf5834c714b86fe182203a79a7,
         type: 3}

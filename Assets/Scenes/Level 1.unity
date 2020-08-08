@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1167,6 +1167,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6995957618068626342, guid: ca22dd1afb163ac4c94a357763a3e29d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6995957618068626362, guid: ca22dd1afb163ac4c94a357763a3e29d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6995957618588755795, guid: ca22dd1afb163ac4c94a357763a3e29d,
         type: 3}
       propertyPath: m_Name
@@ -1656,20 +1666,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 91355616095826261, guid: 6ded94bf5834c714b86fe182203a79a7,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 49
-      objectReference: {fileID: 0}
     - target: {fileID: 187771918877421063, guid: 6ded94bf5834c714b86fe182203a79a7,
         type: 3}
       propertyPath: m_Name
       value: Canvas (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 187771918877421063, guid: 6ded94bf5834c714b86fe182203a79a7,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 187771918877421117, guid: 6ded94bf5834c714b86fe182203a79a7,
         type: 3}
@@ -1784,11 +1784,6 @@ PrefabInstance:
     - target: {fileID: 187771919029441231, guid: 6ded94bf5834c714b86fe182203a79a7,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8232954555043710155, guid: 6ded94bf5834c714b86fe182203a79a7,
-        type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2816,31 +2811,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.3004916, y: 3.3906348}
   m_EdgeRadius: 0
---- !u!1 &1909055394 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8232954555043710155, guid: 6ded94bf5834c714b86fe182203a79a7,
-    type: 3}
-  m_PrefabInstance: {fileID: 1348909382}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1909055398
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1909055394}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d818d587f2633d545b55afc695fb264a, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 2
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1918851460
 GameObject:
   m_ObjectHideFlags: 0
@@ -3612,6 +3582,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.b
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337584602477246828, guid: 7843cddb280b5c04b875ad6afe32ceef,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337584602477246828, guid: 7843cddb280b5c04b875ad6afe32ceef,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
       objectReference: {fileID: 0}
     - target: {fileID: 8683794970344726816, guid: 7843cddb280b5c04b875ad6afe32ceef,
         type: 3}
