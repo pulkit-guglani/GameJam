@@ -67,10 +67,13 @@ public class PlayerController : MonoBehaviour
         // for moving Left and Right
         float move = Input.GetAxis("Horizontal");
 
+
         if (move != 0 && !isMoving && grounded)  // for animation
         {
             isMoving = true;
             _animator.SetTrigger("walk");
+            FindObjectOfType<AudioManager>().Play("Walk");
+
         }
 
         if (move == 0 && isMoving)

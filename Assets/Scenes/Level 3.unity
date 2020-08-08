@@ -15745,7 +15745,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a2bb66ac1397009439a58c9487942fc5, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -46363,7 +46363,7 @@ PrefabInstance:
     - target: {fileID: 4122545082171974303, guid: c7cce5b4dcefe0349ad5564210e6afaa,
         type: 3}
       propertyPath: sounds.Array.data[1].volume
-      value: 0.15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4122545082171974303, guid: c7cce5b4dcefe0349ad5564210e6afaa,
         type: 3}
@@ -46398,7 +46398,7 @@ PrefabInstance:
     - target: {fileID: 4122545082171974303, guid: c7cce5b4dcefe0349ad5564210e6afaa,
         type: 3}
       propertyPath: sounds.Array.data[3].volume
-      value: 0.15
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4122545082171974303, guid: c7cce5b4dcefe0349ad5564210e6afaa,
         type: 3}
@@ -46415,6 +46415,16 @@ PrefabInstance:
       propertyPath: sounds.Array.data[4].pitch
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4122545082171974303, guid: c7cce5b4dcefe0349ad5564210e6afaa,
+        type: 3}
+      propertyPath: sounds.Array.data[3].name
+      value: Walk
+      objectReference: {fileID: 0}
+    - target: {fileID: 4122545082171974303, guid: c7cce5b4dcefe0349ad5564210e6afaa,
+        type: 3}
+      propertyPath: sounds.Array.data[3].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: f324529e9fe38a54da75bccba037b7a5, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7cce5b4dcefe0349ad5564210e6afaa, type: 3}
 --- !u!1001 &9147063895370040309
