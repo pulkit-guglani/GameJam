@@ -136,7 +136,7 @@ public class EnemyOnlyShootPlayer : MonoBehaviour
         Debug.Log("Goli lagi enemy ko "+name);
         if ((name.Contains("dart") || name.Contains("Bullet")) )
         {
-            health -= 10;
+            health -= 8;
             if (health <= 0)
             {
                 GameOver.Instance.ShowGameOverScreen("One enemy got killed");

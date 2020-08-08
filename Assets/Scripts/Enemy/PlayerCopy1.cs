@@ -136,12 +136,7 @@ public class PlayerCopy1 : MonoBehaviour
         string name = other.gameObject.name;
         if ((name.Contains("dart") || name.Contains("bullet")) )
         {
-            health -= 10;
-            if (health <= 0)
-            {
-                WinLevel.Instance.ShowWinLevelCanvas();
-            }
-            
+            WinLevel.Instance.ShowWinLevelCanvas();
         }
     }
 
