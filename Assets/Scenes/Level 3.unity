@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -46281,12 +46281,12 @@ PrefabInstance:
     - target: {fileID: 4122545082171974303, guid: c7cce5b4dcefe0349ad5564210e6afaa,
         type: 3}
       propertyPath: sounds.Array.data[4].volume
-      value: 0.4
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 4122545082171974303, guid: c7cce5b4dcefe0349ad5564210e6afaa,
         type: 3}
       propertyPath: sounds.Array.data[4].pitch
-      value: 0.8
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4122545082171974303, guid: c7cce5b4dcefe0349ad5564210e6afaa,
         type: 3}
@@ -46301,12 +46301,12 @@ PrefabInstance:
     - target: {fileID: 4122545082171974303, guid: c7cce5b4dcefe0349ad5564210e6afaa,
         type: 3}
       propertyPath: sounds.Array.data[5].volume
-      value: 0.8
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 4122545082171974303, guid: c7cce5b4dcefe0349ad5564210e6afaa,
         type: 3}
       propertyPath: sounds.Array.data[5].pitch
-      value: 0.8
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4122545082171974303, guid: c7cce5b4dcefe0349ad5564210e6afaa,
         type: 3}
@@ -46316,16 +46316,6 @@ PrefabInstance:
     - target: {fileID: 4122545082171974303, guid: c7cce5b4dcefe0349ad5564210e6afaa,
         type: 3}
       propertyPath: sounds.Array.data[5].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 5bf1f3654f30bc841b0f0f553cc80d78, type: 3}
-    - target: {fileID: 4122545082171974303, guid: c7cce5b4dcefe0349ad5564210e6afaa,
-        type: 3}
-      propertyPath: sounds.Array.data[4].name
-      value: SmallBlast
-      objectReference: {fileID: 0}
-    - target: {fileID: 4122545082171974303, guid: c7cce5b4dcefe0349ad5564210e6afaa,
-        type: 3}
-      propertyPath: sounds.Array.data[4].clip
       value: 
       objectReference: {fileID: 8300000, guid: 5bf1f3654f30bc841b0f0f553cc80d78, type: 3}
     m_RemovedComponents: []

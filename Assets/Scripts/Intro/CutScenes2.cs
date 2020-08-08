@@ -39,7 +39,7 @@ public class CutScenes2 : MonoBehaviour
         player.gameObject.SetActive(true);
         yield return new WaitForSeconds(2);
         StartCoroutine(CameraZoom());
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(4);
 
             StartCoroutine(ShowMainMenu());
       
