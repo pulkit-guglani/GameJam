@@ -16,6 +16,7 @@ public class explodableBullet : MonoBehaviour
         Debug.Log("Explodable bullet");
         Explodable explodable;
         GameObject effect =  Instantiate(hitEffect, transform.position, Quaternion.identity);
+        FindObjectOfType<AudioManager>().Play("SmallBlast");
         Destroy(effect,2);
         Destroy(gameObject);
         if (explodable = other.gameObject.GetComponent<Explodable>())

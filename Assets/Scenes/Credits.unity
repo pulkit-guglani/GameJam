@@ -367,7 +367,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9245283, g: 0.5727195, b: 0, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -386,8 +386,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.89
-  m_Text: "Game Designer : \nPulkit \n\nProgrammer :\n Ashutosh , Aman , Pulkit\n\nArtwork
-    :\n RAI\n\nSound Engineer and Composser :\n Rose , Spooky"
+  m_Text: "Game Designer : \nPulkit \n\nProgrammers :\n Ashutosh(UI) , Aman(AI) ,
+    Pulkit(Visual)\n\nArtwork :\n RAI\n\nSound Engineer and Composer :\n Rose , Spooky"
 --- !u!222 &1789378087
 CanvasRenderer:
   m_ObjectHideFlags: 0
